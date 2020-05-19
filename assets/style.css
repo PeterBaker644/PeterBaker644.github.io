@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'nfBook';
+    src: url('fonts/NF_Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nfBold';
+    src: url('fonts/NF_Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nfItalic';
+    src: url('fonts/NF_Italic.woff') format('woff');
+    font-weight: italic;
+    font-style: normal;
+}
+
+body {
+    background-color: #292C31;
+    align-items: center;
+    font-family: 'Playfair Display SC', sans-serif;
+    line-height: 1.95;
+}
+
+/* p {
+    padding: 10px;
+    color: white;
+    font-family: "nfBook";
+} */
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #292C31;
+    color: white;
+}
+
+hr {
+    background-color: #E54B4B;
+    height: 1px;
+    border: none;
+}
+
+.nav-items {
+    padding: 0px 20px 0px 20px;     
+    text-align: center;
+}
+
+.nav-items:hover {
+    background-color: #3D4148;
+}
+
+
+.first {
+    padding: 0px 40px;
+    flex-grow: 4;
+    text-align: left;
+}
+
+.centerplate {
+    background:linear-gradient(45deg,#1D2023 48%,#4281A4 40%);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.centerplate {  
+    font-family: nfBook;
+}
+
+.sub-title {   
+    font-size: 2rem;
+    font-family: 'Playfair Display';
+}
+
+.lead {
+    margin: 0px 40px;
+    color: white;
+}
+
+.blast {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    font-size: 10vw;
+    font-family: 'Playfair Display SC', serif;
+    color: white;
+    line-height: 10rem;
+}
+
+.profile {
+    width: 25vw;
+    padding: 0px 20px;
+    object-fit: cover;
+}
+
+.info {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 70%;
+}
+
+/* .parallelogram {
+    position: absolute;
+    left: 48vw;
+    top: 0px;
+	width: 50vw;
+    height: 50px;
+    z-index: -1;
+	transform: skew(45deg);
+	background: #E54B4B;
+} */
+
+/* .parallelogram {
+    position: absolute;
+    right: 30vw;
+	width: 15px;
+    height: inherit;
+	transform: skew(45deg);
+	background: #E54B4B;
+} */

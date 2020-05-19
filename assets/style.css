@@ -48,7 +48,7 @@ hr {
     background-color: #E54B4B;
     height: 1px;
     border: none;
-    width: clamp(32rem, 52vw, 62rem);
+    width: clamp(34rem, 54vw, 65rem);
     margin: 0px 0px;
     text-align: left;
 }
@@ -72,7 +72,7 @@ hr {
 }
 
 .centerplate {
-    background:linear-gradient(45deg,#1D2023 48%,#4281A4 40%);
+    background:linear-gradient(45deg,#1D2023 56%,#4281A4 40%);
     position: relative;
     display: flex;
     justify-content: space-evenly;
@@ -95,6 +95,7 @@ hr {
     text-align: left;
     font-size: clamp(5rem, 8vw, 10rem);
     font-family: 'Playfair Display SC', serif;
+    font-weight: 700;
     color: white;
     line-height: clamp(7rem, 11vw, 12rem);
 }

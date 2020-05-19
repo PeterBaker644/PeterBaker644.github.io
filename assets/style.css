@@ -26,18 +26,15 @@ body {
     line-height: 1.95;
 }
 
-/* p {
-    padding: 10px;
-    color: white;
-    font-family: "nfBook";
-} */
-
 .nav {
     display: flex;
     justify-content: space-around;
+    position: relative;
+    z-index: 1;
     color: white;
     font-size: 2rem;
     font-family: 'Playfair Display', serif;
+    box-shadow: 4px 0px 12px 1px rgb(23, 23, 25, 0.5);
 }
 
 header {
@@ -51,32 +48,35 @@ hr {
     background-color: #E54B4B;
     height: 1px;
     border: none;
+    width: clamp(32rem, 52vw, 62rem);
+    margin: 0px 0px;
+    text-align: left;
 }
 
 .nav-items {
-    padding: 0px 20px 0px 20px;     
+    padding: 0px 40px;     
     text-align: center;
+    background-color: #3D4148;
 }
 
 .nav-items:hover {
-    background-color: #3D4148;
+    background-color: #E54B4B;
+    color: black;
 }
 
 
 .first {
     padding: 0px 40px;
-    flex-grow: 4;
+    flex-grow: 3;
     text-align: left;
 }
 
 .centerplate {
     background:linear-gradient(45deg,#1D2023 48%,#4281A4 40%);
+    position: relative;
     display: flex;
     justify-content: space-evenly;
-}
-
-.centerplate {  
-    font-family: nfBook;
+    font-family: 'nfBook';
 }
 
 .sub-title {   
@@ -93,31 +93,41 @@ hr {
     position: relative;
     z-index: 1;
     text-align: left;
-    font-size: 10rem;
+    font-size: clamp(5rem, 8vw, 10rem);
     font-family: 'Playfair Display SC', serif;
     color: white;
-    line-height: 10rem;
+    line-height: clamp(7rem, 11vw, 12rem);
 }
 
 .profile {
-    width: 25vw;
-    padding: 0px 20px;
-    object-fit: cover;
+    pointer-events: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    width: clamp(22rem, 29vw, 27rem);
 }
 
 .info {
     padding-top: 20px;
     padding-bottom: 30px;
-    width: 70%;
+    width: 50%;
 }
 
-/* .parallelogram {
+.bottom {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    box-shadow: 4px -8px 12px 0px rgb(23, 23, 25, 0.2);
+}
+
+/* .thing {
     position: absolute;
-    left: 48vw;
+    left: 0px;
     top: 0px;
 	width: 50vw;
     height: 50px;
-    z-index: -1;
+    z-index: 0;
 	transform: skew(45deg);
 	background: #E54B4B;
 } */
@@ -129,4 +139,10 @@ hr {
     height: inherit;
 	transform: skew(45deg);
 	background: #E54B4B;
+} */
+
+/* @media screen and (max-width: 1050px) {
+    .profile {
+        width: 29rem;
+    }
 } */

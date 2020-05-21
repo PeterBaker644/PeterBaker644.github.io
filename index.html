@@ -16,34 +16,36 @@
     <header>
         <div class="header">
             <div class="brand">
-                <div class="title">
+                <h1 class="title">
                     PETER BAKER
-                </div>
+                </h1>
                 <div class="icon-wrap">
                     <div class="icon red"></div> 
                     <div class="icon yellow"></div>
                     <div class="icon blue"></div>
                 </div>
             </div>
-            <div class="button hover-red">about</div>
-            <div class="button hover-yellow">examples</div>
-            <div class="button hover-blue">contact</div>
-        </div>
-        <!-- <div class="title red">
-            <p class="sub-title-1">design for the bold</p> 
+            <div class="menu">
+                <div class="button hover-red" id="button-about">about</div>
+                <div class="button hover-yellow" id="button-examples">examples</div>
+                <div class="button hover-blue" id="button-contact">contact</div>
+            </div>
+        <!-- </div>
+        <div class="title red">
+            <h2 class="sub-title-1">design for the bold</h2> 
         </div>
         <div class="title yellow">
-            <p class="sub-title-2">design for the fearless</p> 
+            <h2 class="sub-title-2">design for the fearless</h2> 
         </div>
         <div class="title dark-blue">
-            <p class="sub-title-3">design for you</p> 
+            <h2 class="sub-title-3">design for you</h2> 
         </div>
         <div class="break"></div> -->
     </header>
 
-    <main class="container">
-        <img class="profile" src="assets/images/Profile-Cutout-Shadow-Cropped-Face-Circle.png">  
-        <div class="text-box">
+    <main class="container" id="about">   
+        <div class="text-box"> 
+            <img class="profile" src="assets/images/Profile-Cutout-Shadow-Cropped-Face-Circle.png">  
             <p>
                 Previously a scenic painter, I'm now studying to be a full-stack web developer.
             </p>
@@ -53,7 +55,48 @@
             <p>
                 Feel free to contact me with questions or for more information at any time.
             </p>
-        </div>    
+        </div>
     </main>
 
+    <main class="container hidden" id="examples">   
+        <div class="text-box"> 
+            <p>The following are some simple examples of my work, each utilizing different javascript, css, and APIs:</p>
+            <a href="https://peterbaker644.github.io/Weather-Application/" target="_blank" class="example text-1">
+                <p>Weather Application</p>
+                <img class="hue-red" src="assets/images/screenshot-weather.png">
+            </a>
+            <a href="https://peterbaker644.github.io/Quiz-Application/" target="_blank" class="example text-2">
+                <p>Quiz Application</p>
+                <img class="hue-yellow" src="assets/images/screenshot-quiz.png">
+            </a>
+            <a href="https://peterbaker644.github.io/Local-News-Application/" target="_blank" class="example text-3">
+                <p>Local News Application</p>
+                <img class="hue-blue" src="assets/images/screenshot-news.png">
+            </a>
+        </div>
+    </main>
+
+    <main class="container hidden" id="contact">   
+        <div class="text-box"> 
+            <p>
+                Feel free to contact me with questions or for more information at any time.
+            </p>
+            <p>
+                You can find a copy of my CV <a href="assets/files/Peter-Baker-CV.pdf">here.</a>
+            </p>
+            <p>
+                Contact me by email <a href="mailto:baker644@umn.edu">here.</a>
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="text-white ">Copyright &copy; &nbsp;</span>
+        <a target="_blank" href="https://www.linkedin.com/in/peter-baker-b324a21a3/" class="footer-icon link-red"><i class="fab fa-linkedin-in"></i></a>
+        <a target="_blank" href="https://github.com/PeterBaker644/" class="footer-icon link-yellow"><i class="fab fa-github"></i></a>
+        <a target="_blank" href="https://www.instagram.com/sirchamomile/" class="footer-icon link-blue"><i class="fab fa-instagram"></i></a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/script.js"></script>
 </body>

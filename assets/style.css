@@ -5,6 +5,14 @@ body {
     font-size: 1.2rem;
 }
 
+a {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
 /* font-family: 'Poiret One', cursive;
 font-family: 'Jost', sans-serif;
 font-family: 'Monoton', cursive; */
@@ -17,14 +25,20 @@ font-family: 'Monoton', cursive; */
 .header {
     background: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     color: black;
     /* line-height: 8.9rem; */
 }
 
+.brand{
+    margin: clamp(1rem, 2.5vw, 2rem) 5vw;
+    display: flex;
+    flex-grow: 8;
+}
+
 .title {
-    padding: 2rem 0px 2rem 5rem;
     font-family: 'Jost', sans-serif;
     font-weight: 600;
     font-size: 2.2rem;
@@ -41,6 +55,21 @@ font-family: 'Monoton', cursive; */
     align-self: center;
     width: 9px;
     height: 27px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-right: 10px;
+}
+
+.button {
+    align-self: center;
+    padding: 1.5vw 1.5vw;
+    margin: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .red {
@@ -68,6 +97,7 @@ font-family: 'Monoton', cursive; */
 .sub-title-3 {
     color: white;
 }
+
 .hover-red:hover {
     background-color: #E54B4B;
     color: white;
@@ -82,46 +112,145 @@ font-family: 'Monoton', cursive; */
     color: white;
 }
 
-.brand{
-    display: flex;
-    flex-grow: 8;
+.link-red:hover {
+    color: #E54B4B;
 }
 
-.button {
-    align-self: center;
-    padding: 1.5rem 2rem;
-    margin: 7px;
-    font-size: 1.5rem;
+.link-yellow:hover {
+    color: #FFFF63;
 }
 
-.header-2 {
-    font-family: 'Poiret One', sans-serif;
+.link-blue:hover {
+    color: #2144C5;
 }
-.header-3 {
-    font-family: 'Monoton', sans-serif;
-    font-weight: 400;
+
+.text-1 {
+    color: #E54B4B;
 }
-.header-4 {
-    color: white;
+
+.text-2 {
+    color: #FFFF63;
+}
+
+.text-3 {
+    color: #2144C5;
+}
+
+.example:hover {
+    color:white;
+}
+
+#examples .hue-red:hover {
+    filter: brightness(20%) sepia(100%) saturate(400%) hue-rotate(-40deg);
+}
+
+#examples .hue-yellow:hover {
+    filter: brightness(20%) sepia(100%) saturate(300%) hue-rotate(10deg);
+}
+
+#examples .hue-blue:hover {
+    filter: brightness(20%) sepia(100%) saturate(400%) hue-rotate(180deg);
 }
 
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .profile {
-    margin: 3rem 3rem 3rem 5rem;
+    float: left;
     height: 200px;
+    margin: 0px 50px 20px 0px;
 }
 
 .text-box {
     align-self: center;
-    padding: 2rem 2rem 2rem 0rem;
+    margin: 3rem 3rem 3rem 5rem;
     line-height: 1.8rem;
+    color: white;
     /* width: 60vw; */
 }
 
-.text-box p {
-    padding: 0rem 0px 1rem 0px;
-    color: white;
+#about .text-box p {
+    margin: 0rem 0px 1rem 0px;
+}
+
+#about .text-box p:last-child {
+    margin: 0rem;
+}
+
+.footer {
+    display:flex;
+    line-height: 1.8rem;
+    justify-content: center;
+    padding: clamp(1rem, 2.5vw, 2rem) 5vw;
+    background-color: white;
+    font-weight: normal;
+}
+
+.footer-icon {
+    margin: 0px 5px;
+    color: black;
+}
+
+.example {
+    font-family: 'Poiret One', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.example p {
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events:none;
+}
+
+#examples .text-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#examples img {
+    position: relative;
+    height: 20vw;
+    width: 75vw;
+    object-fit: cover;
+    object-position: top;
+    filter: grayscale(80%) brightness(15%);
+}
+
+@media screen and (max-width: 700px) {
+    .brand {
+        justify-content: center;
+    }
+    .button {
+        margin: 0px 8px 12px 8px;
+        border-radius: 3px;
+    }
+    .menu {
+        margin: 0px;
+    }
+    #examples a {font-size:2rem}   
+}
+
+@media screen and (max-width: 576px) {
+    .text-box {
+        justify-content: center;
+        flex: wrap;
+        margin: 2.5rem;
+        font-size: 1rem;
+    }
+    .profile {
+        object-fit: contain;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+    #examples a {font-size:1.5rem}   
 }

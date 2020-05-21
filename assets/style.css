@@ -1,149 +1,127 @@
-@font-face {
-    font-family: 'nfBook';
-    src: url('fonts/NF_Book.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'nfBold';
-    src: url('fonts/NF_Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'nfItalic';
-    src: url('fonts/NF_Italic.woff') format('woff');
-    font-weight: italic;
-    font-style: normal;
-}
-
 body {
-    background-color: #292C31;
-    align-items: center;
-    font-family: 'Playfair Display SC', sans-serif;
-    line-height: 1.95;
+    background-color: #242424;
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    z-index: 1;
-    color: white;
-    font-size: 2rem;
-    font-family: 'Playfair Display', serif;
-    box-shadow: 4px 0px 12px 1px rgb(23, 23, 25, 0.5);
+/* font-family: 'Poiret One', cursive;
+font-family: 'Jost', sans-serif;
+font-family: 'Monoton', cursive; */
+
+.break {
+    background-color: white;
+    height: 2rem;
 }
 
-header {
-    width: 100%;
-    text-align: center;
-    background-color: #292C31;
-    color: white;
-}
-
-hr {
-    background-color: #E54B4B;
-    height: 1px;
-    border: none;
-    width: clamp(34rem, 54vw, 65rem);
-    margin: 0px 0px;
-    text-align: left;
-}
-
-.nav-items {
-    padding: 0px 40px;     
-    text-align: center;
-    background-color: #3D4148;
-}
-
-.nav-items:hover {
-    background-color: #E54B4B;
-    color: black;
-}
-
-
-.first {
-    padding: 0px 40px;
-    flex-grow: 3;
-    text-align: left;
-}
-
-.centerplate {
-    background:linear-gradient(45deg,#1D2023 56%,#4281A4 40%);
-    position: relative;
+.header {
+    background: white;
     display: flex;
     justify-content: space-evenly;
-    font-family: 'nfBook';
+    width: 100%;
+    color: black;
+    /* line-height: 8.9rem; */
 }
 
-.sub-title {   
-    font-size: 2rem;
-    font-family: 'Playfair Display';
+.title {
+    padding: 2rem 0px 2rem 5rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
 }
 
-.lead {
-    margin: 0px 40px;
+.icon-wrap{
+    display: flex;
+    align-self: center;
+    height: 27px;
+    margin: 0px 20px;
+}
+
+.icon {
+    align-self: center;
+    width: 9px;
+    height: 27px;
+}
+
+.red {
+    background-color: #E54B4B;
+}
+.yellow {
+    background-color: #FFFF63;
+}
+.blue {
+    background-color: #2144C5;
+}
+.dark-blue {
+    background-color: #102A6D;
+}
+
+.sub-title-1 {
+    font-family: 'Poiret One', sans-serif;
+}
+
+.sub-title-2 {
+    font-family: 'Monoton', cursive;
+    font-weight: normal;
+}
+
+.sub-title-3 {
+    color: white;
+}
+.hover-red:hover {
+    background-color: #E54B4B;
     color: white;
 }
 
-.blast {
-    position: relative;
-    z-index: 1;
-    text-align: left;
-    font-size: clamp(5rem, 8vw, 10rem);
-    font-family: 'Playfair Display SC', serif;
-    font-weight: 700;
+.hover-yellow:hover {
+    background-color: #FFFF63;
+}
+
+.hover-blue:hover {
+    background-color: #2144C5;
     color: white;
-    line-height: clamp(7rem, 11vw, 12rem);
+}
+
+.brand{
+    display: flex;
+    flex-grow: 8;
+}
+
+.button {
+    align-self: center;
+    padding: 1.5rem 2rem;
+    margin: 7px;
+    font-size: 1.5rem;
+}
+
+.header-2 {
+    font-family: 'Poiret One', sans-serif;
+}
+.header-3 {
+    font-family: 'Monoton', sans-serif;
+    font-weight: 400;
+}
+.header-4 {
+    color: white;
+}
+
+.container {
+    display: flex;
 }
 
 .profile {
-    pointer-events: none;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    z-index: 2;
-    width: clamp(22rem, 29vw, 27rem);
+    margin: 3rem 3rem 3rem 5rem;
+    height: 200px;
 }
 
-.info {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    width: 50%;
+.text-box {
+    align-self: center;
+    padding: 2rem 2rem 2rem 0rem;
+    line-height: 1.8rem;
+    /* width: 60vw; */
 }
 
-.bottom {
-    display: flex;
-    position: relative;
-    z-index: 2;
-    box-shadow: 4px -8px 12px 0px rgb(23, 23, 25, 0.2);
+.text-box p {
+    padding: 0rem 0px 1rem 0px;
+    color: white;
 }
-
-/* .thing {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-	width: 50vw;
-    height: 50px;
-    z-index: 0;
-	transform: skew(45deg);
-	background: #E54B4B;
-} */
-
-/* .parallelogram {
-    position: absolute;
-    right: 30vw;
-	width: 15px;
-    height: inherit;
-	transform: skew(45deg);
-	background: #E54B4B;
-} */
-
-/* @media screen and (max-width: 1050px) {
-    .profile {
-        width: 29rem;
-    }
-} */

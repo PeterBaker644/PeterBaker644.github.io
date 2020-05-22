@@ -198,16 +198,17 @@ font-family: 'Monoton', cursive; */
     font-weight: bold;
     font-size: 3rem;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
 }
 
 .example p {
     margin: 0px;
     text-align: center;
-    position: relative;
+    position: absolute;
     z-index: 1;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     pointer-events:none;
 }
 

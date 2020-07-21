@@ -9,6 +9,18 @@ a {
     color: white;
 }
 
+button {
+    background: none !important;
+    color: inherit;
+    cursor: pointer;
+    border: none;
+    pointer-events: auto;
+}
+
+button:hover {
+    color: #a9abad;
+}
+
 .hidden {
     display: none;
 }
@@ -204,7 +216,7 @@ font-family: 'Monoton', cursive; */
     margin-top: 3rem;
 }
 
-.example p {
+.example .example-title {
     margin: 0px;
     text-align: center;
     position: absolute;
@@ -225,6 +237,33 @@ font-family: 'Monoton', cursive; */
     object-fit: cover;
     object-position: top;
     filter: grayscale(80%) brightness(15%);
+}
+
+#examples p {
+    pointer-events: none;
+}
+
+.font-comment {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 200;
+    /* line-height: 2.4rem; */
+}
+
+.description {
+    max-width: 70vw; 
+    padding-top: 1rem;
+}
+
+.git-link {
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 992px) {
+    .font-comment {
+        font-size: 1.2rem;
+    }
+    #examples a {font-size:2.2rem}   
 }
 
 @media screen and (max-width: 700px) {
@@ -253,5 +292,16 @@ font-family: 'Monoton', cursive; */
         width: 100%;
         margin: 0px 0px 20px 0px;
     }
-    #examples a {font-size:1.5rem}   
+    #examples a {font-size:1.5rem}
+    .description {
+        display: none;
+    }
+    .git-link {
+        padding-left: 1rem;
+        font-size: 1rem;
+    }   
+}
+
+@media screen and (max-width: 480px) {
+    #examples a {font-size:1rem}
 }

@@ -21,3 +21,10 @@ $("#button-contact").on("click", function (){
     $("#examples").hide();
     $("#contact").show();
 })
+
+$("button").on("click", function(event){
+    event.preventDefault();
+    event.stopPropagation();
+    let url = $(this).data("url");
+    window.open(url);
+})
